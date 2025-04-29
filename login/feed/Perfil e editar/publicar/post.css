@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0d6f9;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #8a2be2, #ff69b4);
+    color: #f9d2eb;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .icon {
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .new-post {
+    background: #ffe6f7;
+    padding: 15px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .new-post input[type="file"],
+  .new-post input[type="text"],
+  .new-post button {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .new-post button {
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .post {
+    background: #f7e7f2;
+    width: 90%;
+    max-width: 500px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .post-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .comments {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .comments input {
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .comments button {
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .comment-box {
+    background: #f0d6f9;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  

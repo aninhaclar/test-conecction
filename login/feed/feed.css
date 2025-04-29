@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0d6f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #8a2be2, #ff69b4);
+    color: #f9d2eb;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.icon {
+    height: 30px;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    flex: 1;
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.post {
+    background: #f7e7f2;
+    width: 90%;
+    max-width: 500px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.like-button {
+    font-size: -45px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.liked {
+    color: red;
+}
+
+.comments {
+    display: flex;
+    margin-top: 10px;
+}
+
+.comments input {
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.comments button {
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.comment-box {
+    display: none;
+    background: #f0d6f9;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.caption-box1{
+    background: transparent;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 1px;
+    font-size: 14px;
+}
+.caption-box2{
+    background: transparent;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 1px;
+    font-size: 14px;
+}
+
+.actions span {
+    display: flex; /* Organiza os ícones lado a lado */
+    gap: 15px; /* Espaçamento entre os ícones */
+    font-size: -15px; /* Tamanho maior dos ícones */
+    cursor: pointer; /* Mostra que são clicáveis */
+    user-select: none; /* Evita que o usuário selecione o texto */
+}
+
+/* Efeito ao passar o mouse */
+.actions span:hover {
+    transform: scale(1.2); /* Aumenta um pouco */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Coração preenchido quando curtido */
+.liked {
+    animation: pop 0.3s ease-in-out; /* Aplica animação */
+}
+
+/* Animação de crescimento rápido */
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/* Ícone de menu para cada comentário */
+.comment-menu {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+/* Caixa de opções (Editar/Excluir) */
+.comment-options {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.comment-options button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.comment-options button:hover {
+    text-decoration: underline;
+}
+
+/* Esconde as opções por padrão */
+.hidden {
+    display: none;
+}

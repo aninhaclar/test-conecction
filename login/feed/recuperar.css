@@ -1,0 +1,113 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background com gradiente */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #8a2be2, #ff69b4);
+    }
+
+/* Container do formulário */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Caixa do formulário */
+.form-box {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+}
+
+/* Título */
+.form-box h2 {
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-style: italic;
+    color: #000;
+}
+
+/* Labels */
+label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-style: italic;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Caixa de entrada com ícone */
+.input-box {
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+    font-size: 14px;
+}
+
+.input-box .lock {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 16px;
+}
+
+/* Botões */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+    width: 48%;
+}
+
+button.back {
+    background-color: #fff;
+    color: #ff5733;
+    font-style: italic;
+}
+
+button.back:hover {
+    background-color: #ffe6e1;
+}
+
+button.confirm {
+    background-color: #e5e5e5;
+    color: #333;
+}
+
+button.confirm:hover {
+    background: linear-gradient(to right, #8a2be2, #ff69b4);
+}

@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #8A2BE2, #FF69B4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 90vh; 
+    margin-top: 20px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    left: -520px;
+    text-align: right; 
+}
+.logo img {
+    width: 80px;
+    height: 80ps;
+}
+.login-box {
+    background: rgba(255, 255, 255, 0.317);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    margin-top: -100px; 
+}
+.input-box {
+    position: relative;
+    margin: 10px 0;
+}
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 0px;
+    border-radius: 30px;
+    border: 1px solid #000000;
+}
+.icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+.forgot {
+    text-align: right;
+    font-size: 12px;
+}
+button {
+    background: #dac5edc2;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background: linear-gradient(to right, #8A2BE2, #FF69B4);
+}

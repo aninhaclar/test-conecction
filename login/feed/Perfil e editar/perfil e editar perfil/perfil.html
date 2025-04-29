@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil de Usuário</title>
+  <link rel="stylesheet" href="perfil.css"/>
+</head>
+<body>
+  <!-- perfil -->
+  <div class="perfil-container" id="perfil-view">
+    <div class="user-info">
+      <div class="foto-user">
+        <img id="foto-perfil" src="../img/perfil.png" alt="foto-usuario" />
+      </div>
+      <div class="user-details">
+        <div class="username" id="username">@jhe_rodriguesx</div>
+        <button class="edit-button" id="btn-editar">Editar Perfil</button>
+        <button class="post-button">Publicar</button>
+      </div>
+    </div>
+    <div class="stats">
+      <div><span>3</span> Publicações</div>
+      <div><span>1.089</span> seguidores</div>
+      <div>A seguir <span>328</span></div>
+    </div>
+    <div class="bio">
+      <hr />
+      <strong>Jheniffer Rodrigues</strong>
+      <p id="bio-text">"Sonhando alto e realizando sonhos"</p>
+    </div>
+    <hr />
+    <h3>📷 Publicações</h3>
+    <div class="posts">
+      <div class="post-frame"><img src="../feed/Captura de tela 2025-04-03 143020.png" alt="publicação" /></div>
+      <div class="post-frame"><img src="../feed/fotorj.png" alt="publicação" /></div>
+      <div class="post-frame"><img src="../img/foto jheni.png" alt="publicação" /></div>
+    </div>
+  </div>
+
+  <!-- e ditar perfil -->
+  <div class="container" id="edit-view" style="display: none;">
+    <div class="profile-section">
+      <img src="./img/frame2.png" alt="Foto de perfil" class="profile-pic" id="edit-foto">
+      <button class="change-photo">Trocar foto</button>
+    </div>
+    <div class="form-section">
+      <label for="nome"><i>Nome de perfil</i></label>
+      <input type="text" id="nome">
+      <label for="bio"><i>Bio</i></label>
+      <textarea id="bio"></textarea>
+      <button class="submit-btn" id="btn-ok">OK</button>
+    </div>
+  </div>
+
+  
+
+  <script src="perfil.js"></script>
+</body>
+</html>
